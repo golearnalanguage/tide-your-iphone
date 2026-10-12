@@ -1,0 +1,34 @@
+name: Tests
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+        python: ["3.9", "3.13"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Test without a connected device
+        run: python -m unittest discover -s tests -v
+      - name: Check package installation
+        run: |
+          python -m pip install .
+          tide-your-iphone --version
+      - name: Run the offline example
+        run: |
+          tide-your-iphone probe --input examples/installation_proxy.json --output-dir data/demo
+          tide-your-iphone join --registry data/demo/app_registry.json --usage examples/usage.csv --output-dir reports/demo
+          tide-your-iphone verify data/demo/app_registry.sha256
+          tide-your-iphone verify reports/demo/app_ranking.sha256

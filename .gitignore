@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+.venv/
+.device-env/
+*.egg-info/
+build/
+dist/
+data/
+reports/
+.DS_Store

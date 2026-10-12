@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tide-your-iphone"
+version = "0.2.0"
+description = "Read-only Apple device app registry and local usage ranking tools"
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.9"
+dependencies = []
+
+[project.scripts]
+tide-your-iphone = "tide_your_iphone.cli:main"
+
+[project.urls]
+Repository = "https://github.com/golearnalanguage/tide-your-iphone"
+Issues = "https://github.com/golearnalanguage/tide-your-iphone/issues"
+
+[tool.setuptools.packages.find]
+include = ["tide_your_iphone*"]

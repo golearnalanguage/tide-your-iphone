@@ -1,0 +1,17 @@
+{
+  "org.example.notes": {
+    "CFBundleIdentifier": "org.example.notes",
+    "CFBundleDisplayName": "示例笔记",
+    "CFBundleName": "ExampleNotes",
+    "ApplicationType": "User",
+    "CFBundleShortVersionString": "2.0",
+    "Container": "/private/example-only",
+    "Entitlements": {"example-only": true}
+  },
+  "org.example.reader": {
+    "CFBundleIdentifier": "org.example.reader",
+    "CFBundleName": "Example Reader",
+    "ApplicationType": "User",
+    "CFBundleVersion": "13"
+  }
+}

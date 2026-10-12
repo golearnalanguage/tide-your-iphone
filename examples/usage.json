@@ -1,0 +1,7 @@
+[
+  {"metric": "foreground_entries", "bundle_id": "org.example.notes", "count": 12},
+  {"metric": "foreground_entries", "bundle_id": "org.example.reader", "count": 4},
+  {"metric": "foreground_entries", "bundle_id": "org.example.notes", "count": 3},
+  {"metric": "foreground_entries", "bundle_id": "org.example.unresolved", "count": 2},
+  {"metric": "homescreen_launches_experimental", "bundle_id": "org.example.notes", "count": 6}
+]

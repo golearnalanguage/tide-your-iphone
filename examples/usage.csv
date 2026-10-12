@@ -1,0 +1,6 @@
+metric,bundle_id,count
+foreground_entries,org.example.notes,12
+foreground_entries,org.example.reader,4
+foreground_entries,org.example.notes,3
+foreground_entries,org.example.unresolved,2
+homescreen_launches_experimental,org.example.notes,6

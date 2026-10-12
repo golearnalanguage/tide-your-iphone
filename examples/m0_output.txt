@@ -1,0 +1,13 @@
+===== tide your iPhone M0 Probe =====
+Device: EXAMPLE-BIOME-UUID
+
+===== TOP FOREGROUND ENTRIES =====
+    15  org.example.notes
+     4  org.example.reader
+     2  org.example.unresolved
+
+===== TOP HOME SCREEN LAUNCHES [EXPERIMENTAL] =====
+     6  org.example.notes
+
+===== ACTIVE FILES =====
+example-only
